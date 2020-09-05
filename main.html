@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora Simples</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form class="calculator" name="calculadora">
+            <input class="value" type="text" name="txt" readonly="">
+            <span class="num clear" onclick="document.calculadora.txt.value =''">c</span>
+            <span class="num" onclick="document.calculadora.txt.value +='/'">/</span>
+            <span class="num" onclick="document.calculadora.txt.value +='+'">+</span>
+            <span class="num" onclick="document.calculadora.txt.value +='7'">7</span>
+            <span class="num" onclick="document.calculadora.txt.value +='8'">8</span>
+            <span class="num" onclick="document.calculadora.txt.value +='9'">9</span>
+            <span class="num" onclick="document.calculadora.txt.value +='-'">-</span>
+            <span class="num" onclick="document.calculadora.txt.value +='4'">4</span>
+            <span class="num" onclick="document.calculadora.txt.value +='5'">5</span>
+            <span class="num" onclick="document.calculadora.txt.value +='6'">6</span>
+            <span class="num plus" onclick="document.calculadora.txt.value +='+'">+</span>
+            <span class="num" onclick="document.calculadora.txt.value +='1'">1</span>
+            <span class="num" onclick="document.calculadora.txt.value +='2'">2</span>
+            <span class="num" onclick="document.calculadora.txt.value +='3'">3</span>
+            <span class="num" onclick="document.calculadora.txt.value +='0'">0</span>
+            <span class="num" onclick="document.calculadora.txt.value +='00'">00</span>
+            <span class="num" onclick="document.calculadora.txt.value +='.'">.</span>
+            <span class="num equal" onclick="document.calculadora.txt.value = eval(calculadora.txt.value)">=</span>
+        </form>
+    </body>
+</html>
